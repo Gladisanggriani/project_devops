@@ -14,5 +14,11 @@ $koneksi = mysqli_connect('localhost', 'root', '', 'swalayan_gl');
 $sql = "UPDATE rak SET nama_rak='$nama', kategori_id='$kategori_id' WHERE id=$id";
 mysqli_query($koneksi, $sql);
 
+simpanLog(
+    $koneksi,
+    "Rak",
+    "Mengubah rak $nama"
+);
+
 $_SESSION['alert']['success'] = "Data berhasil diubah.";
 header('location:../index.php?page=data_rak');
