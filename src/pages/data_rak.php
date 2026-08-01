@@ -59,7 +59,7 @@
                     class="table table-bordered table-striped table-vcenter js-dataTable-buttons dataTable">
                         <thead>
                             <tr class="table-dark">
-                                <th class="text-center">No</th>
+                                <th class="text-center" style="width:60px;">No</th>
                                 <th class="text-center">Name Rak</th>
                                 <th class="text-center">Name Kategori</th>
                                 <th class="text-center">Aksi</th>

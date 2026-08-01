@@ -57,7 +57,7 @@
                     class="table table-bordered table-striped table-vcenter js-dataTable-buttons dataTable">
                     <thead>
                         <tr class="table-dark text-center">
-                            <th>No</th>
+                            <th class="text-center" style="width:60px;">No</th>
                             <th>Id</th>
                             <th>Nama Barang</th>
                             <th>Kategori</th>
