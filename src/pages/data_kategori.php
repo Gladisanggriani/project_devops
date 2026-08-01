@@ -52,7 +52,7 @@
             </div>
             <div class="block-content">
                 <div class="table-responsive">
-                    <table class="table table-bordered table-hover table-striped table-vcenter ">
+                   <table class="table table-bordered table-hover table-striped table-vcenter js-dataTable-buttons dataTable">
                         <thead>
                             <tr class="table-dark">
                                 <th class="text-center">No</th>
