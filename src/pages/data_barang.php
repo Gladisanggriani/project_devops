@@ -58,15 +58,15 @@
                     <thead>
                         <tr class="table-dark text-center">
                             <th class="text-center" style="width:60px;">No</th>
-                            <th>Id</th>
-                            <th>Nama Barang</th>
-                            <th>Kategori</th>
-                            <th>Harga</th>
-                            <th>Rak</th>
-                            <th>Stok</th>
-                            <th>Expired</th>
-                            <th>Gambar</th>
-                            <th>Aksi</th>
+                            <th class="text-center">Id</th>
+                            <th class="text-center">Nama Barang</th>
+                            <th class="text-center">Kategori</th>
+                            <th class="text-center">Harga</th>
+                            <th class="text-center">Rak</th>
+                            <th class="text-center">Stok</th>
+                            <th class="text-center">Expired</th>
+                            <th class="text-center">Gambar</th>
+                            <th class="text-center" style="width:100px;">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
