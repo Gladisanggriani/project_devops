@@ -49,7 +49,9 @@
             </div>
         </div>
         <div class="block-content block-content-full overflow-x-auto">
-            <div class="table-responsive">
+            <div class="dt-container dt-bootstrap5 dt-empty-footer">
+            <div class="row mt-2 justify-content-between dt-layout-table">
+            <div class="col-12 dt-layout-full col-md">
                 <table
                     id="DataTables_Table_Barang"
                     class="table table-bordered table-striped table-vcenter js-dataTable-buttons dataTable">
