@@ -169,6 +169,16 @@
                           </li>
                       </ul>
                   </li>
+
+                  <li class="nav-main-item">
+                      <a class="nav-main-link <?= $page == 'activity_log' ? 'active' : '' ?>"
+                          href="index.php?page=activity_log">
+                          <i class="nav-main-link-icon fa fa-history"></i>
+                          <span class="nav-main-link-name">
+                              Activity Log
+                          </span>
+                      </a>
+                  </li>
               </ul>
           </div>
 
