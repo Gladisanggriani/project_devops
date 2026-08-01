@@ -5,7 +5,7 @@
                   <i class="fa fa-circle-notch text-primary"></i>
               </span>
               <!-- <img src="assets/media/photos/gl.png" alt="Logo GL Swalayan" height="35"> -->
-              <span class="smini-hide fs-5 tracking-wider ">Swalayan</span>
+              <span class="smini-hide fs-5 tracking-wider ">Inventory</span>
           </a>
           <!-- END Logo -->
 
