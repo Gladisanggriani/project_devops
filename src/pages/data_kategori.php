@@ -52,11 +52,7 @@
             </div>
             <div class="block-content block-content-full overflow-x-auto">
                 <div class="table-responsive">
-<<<<<<< HEAD
-                   <table
-                    id="DataTables_Table_Kategori"
-                    class="table table-bordered table-hover table-striped table-vcenter js-dataTable-buttons dataTable">
-                   <table class="table table-bordered table-hover table-striped table-vcenter js-dataTable-buttons dataTable">a2e98757735860d943aba0a1b3019fb3fae0eedb
+                   <table class="table table-bordered table-hover table-striped table-vcenter js-dataTable-buttons dataTable">
                         <thead>
                             <tr class="table-dark">
                                 <th class="text-center">No</th>
