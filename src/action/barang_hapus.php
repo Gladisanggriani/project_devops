@@ -12,7 +12,11 @@ if (!empty($cek['gambar']) && file_exists("../assets/uploads/" . $cek['gambar'])
 
 mysqli_query($koneksi, "DELETE FROM barang WHERE id='$id'");
 
-
+simpanLog(
+    $koneksi,
+    "Barang",
+    "Menghapus barang $nama_barang"
+);
 
 $_SESSION['alert']['success'] = "Data berhasil dihapus.";
 header('location:../index.php?page=data_barang');
