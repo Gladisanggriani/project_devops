@@ -49,9 +49,11 @@
                     </a>
                 </div>
             </div>
-            <div class="block-content">
+            <div class="block-content block-content-full overflow-x-auto">
                 <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-vcenter">
+                    <table
+                        id="DataTables_Table_Rak"
+                        class="table table-bordered table-striped table-vcenter js-dataTable-buttons dataTable">
                         <thead>
                             <tr class="table-dark">
                                 <th class="text-center">No</th>
@@ -60,7 +62,7 @@
                                 <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-center">
                             <?php
                             // $dataArray = [
                             //     [
