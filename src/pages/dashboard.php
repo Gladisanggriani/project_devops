@@ -133,7 +133,28 @@
         <!-- ========================================================================================== -->
         <!-- 7. CODINGAN DATA RAK                                                                       -->
         <!-- ========================================================================================== -->
-       
+        <div class="col-md-4">
+            <div class="card h-100 shadow border-0 transition-hover card-hover-warning">
+                <div class="card-body text-center p-4">
+                    <div class="position-absolute top-0 end-0 p-3">
+                        <span class="badge bg-warning-light text-warning rounded-circle p-2"><i class="fa fa-map-marker-alt"></i></span>
+                    </div>
+                    <div class="item item-circle bg-warning-light text-warning mx-auto mb-3 shadow-sm icon-pulse" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                        <i class="fa fa-align-justify fa-2x"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2">Data Rak</h5>
+                    <p class="text-muted text-sm mb-4">Tentukan lokasi penempatan barang.</p>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="index.php?page=buat_rak" class="btn btn-warning text-dark w-100 btn-sm fw-semibold"><i class="fa fa-plus me-1"></i> Tambah</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="index.php?page=data-rak" class="btn btn-outline-warning text-dark border-warning w-100 btn-sm"><i class="fa fa-list me-1"></i> Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ========================================================================================== -->
 
         <!-- ========================================================================================== -->
