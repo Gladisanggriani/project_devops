@@ -160,7 +160,28 @@
         <!-- ========================================================================================== -->
         <!-- 8. CODINGAN DATA BARANG                                                                    -->
         <!-- ========================================================================================== -->
-       
+        <div class="col-md-4">
+            <div class="card h-100 shadow border-0 transition-hover card-hover-success">
+                <div class="card-body text-center p-4">
+                    <div class="position-absolute top-0 start-0 p-3">
+                        <span class="badge bg-danger pulse-badge">Update Stok!</span>
+                    </div>
+                    <div class="item item-circle bg-success-light text-success mx-auto mb-3 shadow-sm icon-pulse" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                        <i class="fa fa-boxes fa-2x"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2">Data Barang</h5>
+                    <p class="text-muted text-sm mb-4">Kelola harga, stok, dan detail barang.</p>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="index.php?page=buat_barang" class="btn btn-success w-100 btn-sm"><i class="fa fa-plus me-1"></i> Tambah</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="index.php?page=data_barang" class="btn btn-outline-success w-100 btn-sm"><i class="fa fa-list me-1"></i> Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ========================================================================================== -->
     </div>
 
