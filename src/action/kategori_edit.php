@@ -10,7 +10,14 @@ if (empty($nama)) {
 }
 
 $koneksi = mysqli_connect('localhost', 'root', '', 'swalayan_gl');
-$sql = "UPDATE kategori SET nama_kategori='$nama' WHERE id=$id";
+require_once 'log_helper.php';$sql = "UPDATE kategori SET nama_kategori='$nama' WHERE id=$id";
 mysqli_query($koneksi, $sql);
+
+simpanLog(
+    $koneksi,
+    "Kategori",
+    "Mengubah kategori $nama"
+);
+
 $_SESSION['alert']['success'] = "Data berhasil diubah.";
 header('location:../index.php?page=data_kategori');

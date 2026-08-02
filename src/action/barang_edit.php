@@ -1,6 +1,7 @@
 <?php
 session_start();
 $koneksi = mysqli_connect('localhost', 'root', '', 'swalayan_gl');
+require_once 'log_helper.php';
 
 function aman($val) {
     global $koneksi;
@@ -52,6 +53,12 @@ $sql = "UPDATE barang SET
             gambar='$gambar'
         WHERE id='$id'";
 mysqli_query($koneksi, $sql);
+
+simpanLog(
+    $koneksi,
+    "Barang",
+    "Mengubah barang $nama_barang"
+);
 
 $_SESSION['alert']['success'] = 'Data barang berhasil diedit';
 header("Location: ../index.php?page=data_barang");

@@ -10,8 +10,15 @@ if (empty($nama) || empty($kategori_id)) {
 }
 
 $koneksi = mysqli_connect('localhost', 'root', '', 'swalayan_gl');
+require_once 'log_helper.php';
 $sql = "INSERT INTO rak (id, nama_rak, kategori_id) VALUES(null, '$nama', '$kategori_id')";
 mysqli_query($koneksi, $sql);
+
+simpanLog(
+    $koneksi,
+    "Rak",
+    "Menambahkan rak $nama"
+);
 
 $_SESSION['alert']['success'] = "Data baru berhasil dibuat.";
 header('location:../index.php?page=data_rak');
