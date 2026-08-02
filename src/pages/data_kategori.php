@@ -50,17 +50,17 @@
                     </a>
                 </div>
             </div>
-            <div class="block-content">
+            <div class="block-content block-content-full overflow-x-auto">
                 <div class="table-responsive">
-                    <table class="table table-bordered table-hover table-striped table-vcenter ">
+                   <table class="table table-bordered table-hover table-striped table-vcenter js-dataTable-buttons dataTable">
                         <thead>
                             <tr class="table-dark">
-                                <th class="text-center">No</th>
+                               <th class="text-center" style="width:60px;">No</th>
                                 <th class="text-center">Name Kategori</th>
                                 <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-center">
                             <?php
                             // $dataArray = [
                             //     [
@@ -82,7 +82,7 @@
                             ?>
                                 <tr>
                                     <td class="text-center"><?php echo $no++; ?></td>
-                                    <td><?php echo $data['nama_kategori'] ?></td>
+                                    <td class="text-center"><?= $data['nama_kategori'] ?></td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <form action="action/kategori_hapus.php" method="post">

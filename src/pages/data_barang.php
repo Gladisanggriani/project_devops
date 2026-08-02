@@ -48,21 +48,25 @@
                 </a>
             </div>
         </div>
-        <div class="block-content">
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped table-vcenter">
+        <div class="block-content block-content-full overflow-x-auto">
+            <div class="dt-container dt-bootstrap5 dt-empty-footer">
+            <div class="row mt-2 justify-content-between dt-layout-table">
+            <div class="col-12 dt-layout-full col-md">
+                <table
+                    id="DataTables_Table_Barang"
+                    class="table table-bordered table-striped table-vcenter js-dataTable-buttons dataTable">
                     <thead>
                         <tr class="table-dark text-center">
-                            <th>No</th>
-                            <th>Id</th>
-                            <th>Nama Barang</th>
-                            <th>Kategori</th>
-                            <th>Harga</th>
-                            <th>Rak</th>
-                            <th>Stok</th>
-                            <th>Expired</th>
-                            <th>Gambar</th>
-                            <th>Aksi</th>
+                            <th class="text-center" style="width:60px;">No</th>
+                            <th class="text-center">Id</th>
+                            <th class="text-center">Nama Barang</th>
+                            <th class="text-center">Kategori</th>
+                            <th class="text-center">Harga</th>
+                            <th class="text-center">Rak</th>
+                            <th class="text-center">Stok</th>
+                            <th class="text-center">Expired</th>
+                            <th class="text-center">Gambar</th>
+                            <th class="text-center" style="width:100px;">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
