@@ -1,208 +1,143 @@
+<!-- Dashboard Content (Lebih Ramai & Interaktif) -->
 <div class="content">
-    <!-- Toggle Side Content -->
-    <!-- Class Toggle, functionality initialized in Helpers.oneToggleClass() -->
-    <div class="d-xl-none push">
-        <div class="row g-sm">
+
+    <!-- Toggle Side Content (Mobile) -->
+    <div class="d-xl-none push mb-4">
+        <div class="row g-2">
             <div class="col-6">
-                <button type="button" class="btn btn-alt-secondary w-100" data-toggle="class-toggle" data-target=".js-ecom-div-filters" data-class="d-none">
-                    <i class="fa fa-fw fa-filter text-muted me-1"></i> Filters
+                <button type="button" class="btn btn-light shadow-sm w-100" data-toggle="class-toggle" data-target=".js-ecom-div-filters" data-class="d-none">
+                    <i class="fa fa-fw fa-filter text-primary me-1"></i> Filters
                 </button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-alt-secondary w-100" data-toggle="class-toggle" data-target=".js-ecom-div-cart" data-class="d-none">
-                    <i class="fa fa-fw fa-shopping-cart text-muted me-1"></i> Cart (3)
+                <button type="button" class="btn btn-light shadow-sm w-100" data-toggle="class-toggle" data-target=".js-ecom-div-cart" data-class="d-none">
+                    <i class="fa fa-fw fa-shopping-cart text-primary me-1"></i> Cart (3)
                 </button>
             </div>
         </div>
     </div>
     <!-- END Toggle Side Content -->
 
-    <div class="row push">
-        <div class="col-xl-12">
-            <div class="bg-body-dark fw-semibold rounded p-3 push text-center fs-4">
-                Halo selamat datang di <mark class="fw-semibold text-danger">Dashboard!</mark>
+    <!-- ========================================================================================== -->
+    <!-- 1 & 10. CODINGAN DASHBOARD SWALAYAN & DATA, PANTAU STOK, DAN PROSES TRANSAKSI              -->
+    <!-- ========================================================================================== -->
+   <div class="row mb-4">
+        <div class="col-12">
+            <div class="block block-rounded block-transparent bg-gd-dusk shadow-sm mb-0">
+                <div class="block-content block-content-full bg-black-50 p-4 rounded text-center">
+                    <h2 class="fw-bold text-white mb-2 text-uppercase">
+                        <i class="fa fa-store text-warning me-2 fa-bounce"></i> Dashboard Swalayan
+                    </h2>
+                    <p class="fs-5 fw-medium text-white-75 mb-0">Kelola master data, pantau stok, dan proses transaksi dengan cepat hari ini!</p>
+                </div>
             </div>
-            <!-- Product Results -->
-            <div class="row items-push">
-                <div class="col-md-6 col-xl-4">
-                    <div class="block block-rounded h-100 mb-0">
-                        <div class="block-content p-1">
-                            <div class="options-container">
-                                <img class="img-fluid options-item" src="assets/media/various/ecom_product11.png" alt="">
-                                <div class="options-overlay bg-black-75">
-                                    <div class="options-overlay-content">
-                                        <a class="btn btn-sm btn-alt-secondary" href="index.php?page=buat_kategori">
-                                            Lihat
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <div class="mb-1">
-                                <a class="h6" href="index.php?page=buat_kategori"><b>Buat Kategori</b></a>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="block block-rounded h-100 mb-0">
-                        <div class="block-content p-1">
-                            <div class="options-container">
-                                <img class="img-fluid options-item" src="assets/media/various/ecom_product1.png" alt="">
-                                <div class="options-overlay bg-black-75">
-                                    <div class="options-overlay-content">
-                                        <a class="btn btn-sm btn-alt-secondary" href="index.php?page=data_kategori">
-                                            Lihat
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <div class="mb-1">
-                                <a class="h6" href="index.php?page=data_kategori"><b>Data Kategori</b></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="block block-rounded h-100 mb-0">
-                        <div class="block-content p-1">
-                            <div class="options-container">
-                                <img class="img-fluid options-item" src="assets/media/various/ecom_product11.png" alt="">
-                                <div class="options-overlay bg-black-75">
-                                    <div class="options-overlay-content">
-                                        <a class="btn btn-sm btn-alt-secondary" href="index.php?page=buat_rak">
-                                            Lihat
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <div class="mb-1">
-                                <a class="h6" href="index.php?page=buat_rak"><b>Buat Rak</b></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="block block-rounded h-100 mb-0">
-                        <div class="block-content p-1">
-                            <div class="options-container">
-                                <img class="img-fluid options-item" src="assets/media/various/ecom_product1.png" alt="">
-                                <div class="options-overlay bg-black-75">
-                                    <div class="options-overlay-content">
-                                        <a class="btn btn-sm btn-alt-secondary" href="index.php?page=data-rak">
-                                            View
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <div class="mb-1">
-                                <a class="h6" href="be_pages_ecom_store_product.html"><b>Data Rak</b></a>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="block block-rounded h-100 mb-0">
-                        <div class="block-content p-1">
-                            <div class="options-container">
-                                <img class="img-fluid options-item" src="assets/media/various/ecom_product11.png" alt="">
-                                <div class="options-overlay bg-black-75">
-                                    <div class="options-overlay-content">
-                                        <a class="btn btn-sm btn-alt-secondary" href="index.php?page=buat_barang">
-                                            Lihat
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <div class="mb-1">
-                                <a class="h6" href="index.php?page=buat_barang"><b>Buat Barang</b></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="block block-rounded h-100 mb-0">
-                        <div class="block-content p-1">
-                            <div class="options-container">
-                                <img class="img-fluid options-item" src="assets/media/various/ecom_product1.png" alt="">
-                                <div class="options-overlay bg-black-75">
-                                    <div class="options-overlay-content">
-                                        <a class="btn btn-sm btn-alt-secondary" href="index.php?page=data_barang">
-                                            Lihat
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content">
-                            <div class="mb-1">
-                                <a class="h6" href="index.php?page=data_barang"><b>Data Barang</b></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <!-- Item 1 -->
-                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
-                        <div class="block block-rounded h-100 mb-0">
-                            <div class="block-content p-1">
-                                <div class="options-container">
-                                    <img class="img-fluid options-item" src="assets/media/various/ecom_product3.png" alt="">
-                                    <div class="options-overlay bg-black-75">
-                                        <div class="options-overlay-content">
-                                            <a class="btn btn-sm btn-alt-secondary" href="index.php?page=penjualan">
-                                                Lihat
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <div class="mb-1">
-                                    <a class="h6" href="index.php?page=penjualan"><b>Transaksi - Penjualan</b></a>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
-                        <div class="block block-rounded h-100 mb-0">
-                            <div class="block-content p-1">
-                                <div class="options-container">
-                                    <img class="img-fluid options-item" src="assets/media/various/ecom_product3.png" alt="">
-                                    <div class="options-overlay bg-black-75">
-                                        <div class="options-overlay-content">
-                                            <a class="btn btn-sm btn-alt-secondary" href="index.php?page=laporan">
-                                                Lihat
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <div class="mb-1">
-                                    <a class="h6" href="index.php?page=laporan"><b>Transaksi - Laporan</b></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- END Product Results -->
         </div>
     </div>
+    <!-- ========================================================================================== -->
+
+    <!-- Quick Stats (Mini Widget) -->
+    <div class="row mb-4 g-3">
+        
+        <!-- ========================================================================================== -->
+        <!-- 2. CODINGAN TOTAL BARANG                                                                   -->
+        <!-- ========================================================================================== -->
+       
+        <!-- ========================================================================================== -->
+
+        <!-- ========================================================================================== -->
+        <!-- 3. CODINGAN KATEGORI                                                                       -->
+        <!-- ========================================================================================== -->
+        
+        <!-- ========================================================================================== -->
+
+        <!-- ========================================================================================== -->
+        <!-- 4. CODINGAN JUMLAH RAK                                                                     -->
+        <!-- ========================================================================================== -->
+        
+        <!-- ========================================================================================== -->
+
+        <!-- ========================================================================================== -->
+        <!-- 5. CODINGAN TERJUAL HARI INI                                                               -->
+        <!-- ========================================================================================== -->
+        
+        <!-- ========================================================================================== -->
+
+    </div>
+
+    <!-- ========================================================================================== -->
+    <!-- 6. KELOLA MASTER DATA, PUSAT DATA, DAN DATA KATEGORI                                       -->
+    <!-- ========================================================================================== -->
+    
+        <!-- ========================================================================================== -->
+
+        <!-- ========================================================================================== -->
+        <!-- 7. CODINGAN DATA RAK                                                                       -->
+        <!-- ========================================================================================== -->
+       
+        <!-- ========================================================================================== -->
+
+        <!-- ========================================================================================== -->
+        <!-- 8. CODINGAN DATA BARANG                                                                    -->
+        <!-- ========================================================================================== -->
+       
+        <!-- ========================================================================================== -->
+    </div>
+
+    <!-- ========================================================================================== -->
+    <!-- 9. CODINGAN TRANSAKSI & KEUANGAN, LIVE SYSTEM, MENU KASIR, MULAI PENJUALAN                 -->
+    <!-- ========================================================================================== -->
+   
+        <!-- ========================================================================================== -->
+
+        <!-- ========================================================================================== -->
+        <!-- 10. CODINGAN LAPORAN HARIAN                                                                -->
+        <!-- ========================================================================================== -->
+       
+        <!-- ========================================================================================== -->
+    </div>
 </div>
+
+<!-- Custom CSS (Membuatnya Ramai & Animasi) -->
+<style>
+    /* Gradient Backgrounds (Menggunakan warna yang umum di template UI) */
+    .bg-gd-dusk { background: linear-gradient(135deg, #1e1e2d 0%, #3a3a5c 100%); }
+    .bg-gd-sea { background: linear-gradient(135deg, #2b88d8 0%, #155799 100%); }
+    .bg-gd-sun { background: linear-gradient(135deg, #f68084 0%, #a65076 100%); }
+    
+    /* Light Backgrounds */
+    .bg-primary-light { background-color: #e7f0fa; color: #0056b3; }
+    .bg-warning-light { background-color: #fff8e5; color: #b38600; }
+    .bg-success-light { background-color: #eaf6ec; color: #1e7e34; }
+
+    /* Hover Effects */
+    .transition-hover {
+        transition: all 0.3s ease-in-out;
+    }
+    .transition-hover:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+    .card-hover-primary:hover { border-bottom: 4px solid #0d6efd !important; }
+    .card-hover-warning:hover { border-bottom: 4px solid #ffc107 !important; }
+    .card-hover-success:hover { border-bottom: 4px solid #198754 !important; }
+
+    /* Animasi Icon Berdenyut */
+    @keyframes pulse-icon {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+        }
+    .card:hover .icon-pulse {
+        animation: pulse-icon 1s infinite;
+    }
+    
+    /* Animasi Badge Berkedip/Berdenyut */
+    @keyframes pulse-badge {
+        0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+        70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+    }
+    .pulse-badge {
+        animation: pulse-badge 2s infinite;
+    }
+</style>
