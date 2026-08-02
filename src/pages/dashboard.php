@@ -216,7 +216,22 @@
         <!-- ========================================================================================== -->
         <!-- 10. CODINGAN LAPORAN HARIAN                                                                -->
         <!-- ========================================================================================== -->
-       
+       <div class="col-md-6">
+            <a class="block block-rounded block-link-pop h-100 shadow border-0 bg-gd-sun text-white transition-hover position-relative overflow-hidden" href="index.php?page=laporan" style="display: block; text-decoration: none;">
+                <!-- Decorative background icon -->
+                <i class="fa fa-chart-pie fa-4x position-absolute opacity-25" style="bottom: -10px; right: -10px; transform: rotate(15deg);"></i>
+                <div class="block-content block-content-full d-flex align-items-center justify-content-between p-4">
+                    <div>
+                        <p class="fs-sm fw-bold text-uppercase text-white-75 mb-0">Rekapitulasi</p>
+                        <p class="fs-3 fw-bold text-white mb-2">Laporan Harian</p>
+                        <span class="badge bg-white text-warning fw-bold px-3 py-1"><i class="fa fa-print me-1"></i> Cetak / Lihat Rekap</span>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-25 rounded-circle shadow-sm">
+                        <i class="fa fa-chart-line fa-3x text-white"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
         <!-- ========================================================================================== -->
     </div>
 </div>
