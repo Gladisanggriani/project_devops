@@ -69,7 +69,15 @@
         <!-- ========================================================================================== -->
         <!-- 4. CODINGAN JUMLAH RAK                                                                     -->
         <!-- ========================================================================================== -->
-        
+        <div class="col-6 col-md-3">
+            <div class="card shadow-sm border-0 border-bottom border-4 border-warning h-100">
+                <div class="card-body text-center p-3">
+                    <div class="text-warning mb-2"><i class="fa fa-align-justify fa-2x"></i></div>
+                    <div class="fs-4 fw-bold text-dark">8</div>
+                    <div class="text-muted fs-sm text-uppercase fw-semibold">Jumlah Rak</div>
+                </div>
+            </div>
+        </div>
         <!-- ========================================================================================== -->
 
         <!-- ========================================================================================== -->
