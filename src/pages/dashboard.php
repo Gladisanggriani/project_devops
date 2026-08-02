@@ -41,7 +41,15 @@
         <!-- ========================================================================================== -->
         <!-- 2. CODINGAN TOTAL BARANG                                                                   -->
         <!-- ========================================================================================== -->
-       
+       <div class="col-6 col-md-3">
+            <div class="card shadow-sm border-0 border-bottom border-4 border-success h-100">
+                <div class="card-body text-center p-3">
+                    <div class="text-success mb-2"><i class="fa fa-boxes fa-2x"></i></div>
+                    <div class="fs-4 fw-bold text-dark">128</div>
+                    <div class="text-muted fs-sm text-uppercase fw-semibold">Total Barang</div>
+                </div>
+            </div>
+        </div>
         <!-- ========================================================================================== -->
 
         <!-- ========================================================================================== -->
