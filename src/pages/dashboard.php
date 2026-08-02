@@ -188,7 +188,29 @@
     <!-- ========================================================================================== -->
     <!-- 9. CODINGAN TRANSAKSI & KEUANGAN, LIVE SYSTEM, MENU KASIR, MULAI PENJUALAN                 -->
     <!-- ========================================================================================== -->
-   
+   <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="fw-bold text-dark mb-0"><i class="fa fa-cash-register text-success me-2"></i>Transaksi & Keuangan</h4>
+        <span class="badge bg-success rounded-pill px-3 py-2 shadow-sm">Live System</span>
+    </div>
+
+    <div class="row items-push g-4">
+        <!-- Card Penjualan (Gradient) -->
+        <div class="col-md-6">
+            <a class="block block-rounded block-link-pop h-100 shadow border-0 bg-gd-sea text-white transition-hover position-relative overflow-hidden" href="index.php?page=penjualan" style="display: block; text-decoration: none;">
+                <!-- Decorative background icon -->
+                <i class="fa fa-shopping-basket fa-4x position-absolute opacity-25" style="bottom: -10px; right: -10px; transform: rotate(-15deg);"></i>
+                <div class="block-content block-content-full d-flex align-items-center justify-content-between p-4">
+                    <div>
+                        <p class="fs-sm fw-bold text-uppercase text-white-75 mb-0">Menu Kasir</p>
+                        <p class="fs-3 fw-bold text-white mb-2">Mulai Penjualan</p>
+                        <span class="badge bg-white text-info fw-bold px-3 py-1"><i class="fa fa-play me-1"></i> Buka Mesin Kasir</span>
+                    </div>
+                    <div class="p-3 bg-white bg-opacity-25 rounded-circle shadow-sm">
+                        <i class="fa fa-desktop fa-3x text-white"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
         <!-- ========================================================================================== -->
 
         <!-- ========================================================================================== -->
