@@ -55,7 +55,15 @@
         <!-- ========================================================================================== -->
         <!-- 3. CODINGAN KATEGORI                                                                       -->
         <!-- ========================================================================================== -->
-        
+        <div class="col-6 col-md-3">
+            <div class="card shadow-sm border-0 border-bottom border-4 border-primary h-100">
+                <div class="card-body text-center p-3">
+                    <div class="text-primary mb-2"><i class="fa fa-tags fa-2x"></i></div>
+                    <div class="fs-4 fw-bold text-dark">15</div>
+                    <div class="text-muted fs-sm text-uppercase fw-semibold">Kategori</div>
+                </div>
+            </div>
+        </div>
         <!-- ========================================================================================== -->
 
         <!-- ========================================================================================== -->
