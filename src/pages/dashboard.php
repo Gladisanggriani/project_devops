@@ -99,7 +99,35 @@
     <!-- ========================================================================================== -->
     <!-- 6. KELOLA MASTER DATA, PUSAT DATA, DAN DATA KATEGORI                                       -->
     <!-- ========================================================================================== -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="fw-bold text-dark mb-0"><i class="fa fa-database text-primary me-2"></i>Kelola Master Data</h4>
+        <span class="badge bg-primary rounded-pill px-3 py-2 shadow-sm">Pusat Data</span>
+    </div>
     
+    <div class="row items-push mb-5 g-4">
+        <!-- Card Kategori -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow border-0 transition-hover card-hover-primary">
+                <div class="card-body text-center p-4">
+                    <div class="position-absolute top-0 end-0 p-3">
+                        <span class="badge bg-primary-light text-primary rounded-circle p-2"><i class="fa fa-star"></i></span>
+                    </div>
+                    <div class="item item-circle bg-primary-light text-primary mx-auto mb-3 shadow-sm icon-pulse" style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                        <i class="fa fa-tags fa-2x"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2">Data Kategori</h5>
+                    <p class="text-muted text-sm mb-4">Pengelompokan jenis barang agar lebih rapi.</p>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="index.php?page=buat_kategori" class="btn btn-primary w-100 btn-sm"><i class="fa fa-plus me-1"></i> Tambah</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="index.php?page=data_kategori" class="btn btn-outline-primary w-100 btn-sm"><i class="fa fa-list me-1"></i> Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ========================================================================================== -->
 
         <!-- ========================================================================================== -->
