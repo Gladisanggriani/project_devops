@@ -49,18 +49,23 @@
                     </a>
                 </div>
             </div>
-            <div class="block-content">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-vcenter">
+            <div class="block-content block-content-full overflow-x-auto">
+
+    <div class="dt-container dt-bootstrap5 dt-empty-footer">
+        <div class="row mt-2 justify-content-between dt-layout-table">
+            <div class="col-12 dt-layout-full col-md">
+                <table
+                    id="DataTables_Table_Rak"
+                    class="table table-bordered table-striped table-vcenter js-dataTable-buttons dataTable">
                         <thead>
                             <tr class="table-dark">
-                                <th class="text-center">No</th>
+                                <th class="text-center" style="width:60px;">No</th>
                                 <th class="text-center">Name Rak</th>
                                 <th class="text-center">Name Kategori</th>
                                 <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-center">
                             <?php
                             // $dataArray = [
                             //     [
