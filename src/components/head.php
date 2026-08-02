@@ -1,7 +1,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <title>GL Swalayan</title>
+    <title>Inventory DevOps</title>
 
     <meta name="description" content="OneUI - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave">
     <meta name="author" content="pixelcave">

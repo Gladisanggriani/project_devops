@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <title>GL Swalayan</title>
+  <title>Inventory DevOps</title>
 
   <meta name="description" content="OneUI - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave">
   <meta name="author" content="pixelcave">
@@ -52,7 +52,7 @@
                 </div>
                 <div class="block-content">
                   <div class="p-sm-3 px-lg-4 px-xxl-5 py-lg-5">
-                    <h1 class="h2 mb-1">GL Swalayan </h1>
+                    <h1 class="h2 mb-1">Inventory </h1>
                     <p class="fw-medium text-muted">
                       Welcome, please login.
                     </p>
