@@ -1,6 +1,7 @@
 <?php
 session_start();
 $koneksi = mysqli_connect('localhost', 'root', '', 'swalayan_gl');
+require_once 'log_helper.php';
 
 function aman($val) {
     global $koneksi;
@@ -37,6 +38,12 @@ if (!empty($_FILES['gambar']['name'])) {
 $sql = "INSERT INTO barang (nama_barang, id_kategori, id_rak, harga, stok, gambar, expired_date) 
         VALUES ('$nama', '$id_kategori', '$id_rak', '$harga', '$stok', '$gambar', '$expired_date')";
 mysqli_query($koneksi, $sql);
+
+simpanLog(
+    $koneksi,
+    "Barang",
+    "Menambahkan barang $nama"
+);
 
 $_SESSION['alert']['success'] = "Data baru berhasil dibuat.";
 header('location:../index.php?page=data_barang');

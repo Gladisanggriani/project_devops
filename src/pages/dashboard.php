@@ -1,3 +1,11 @@
+<?php
+// Pastikan koneksi database tersedia di halaman ini
+$koneksi = mysqli_connect('localhost', 'root', '', 'swalayan_gl');
+
+// Ambil 5 aktivitas terbaru untuk ditampilkan di widget dashboard
+$query_activity = mysqli_query($koneksi, "SELECT * FROM activity_log ORDER BY created_at DESC LIMIT 5");
+?>
+
 <!-- Dashboard Content (Lebih Ramai & Interaktif) -->
 <div class="content">
 
@@ -21,7 +29,7 @@
     <!-- ========================================================================================== -->
     <!-- 1 & 10. CODINGAN DASHBOARD SWALAYAN & DATA, PANTAU STOK, DAN PROSES TRANSAKSI              -->
     <!-- ========================================================================================== -->
-   <div class="row mb-4">
+    <div class="row mb-4">
         <div class="col-12">
             <div class="block block-rounded block-transparent bg-gd-dusk shadow-sm mb-0">
                 <div class="block-content block-content-full bg-black-50 p-4 rounded text-center">
@@ -37,11 +45,8 @@
 
     <!-- Quick Stats (Mini Widget) -->
     <div class="row mb-4 g-3">
-        
-        <!-- ========================================================================================== -->
-        <!-- 2. CODINGAN TOTAL BARANG                                                                   -->
-        <!-- ========================================================================================== -->
-       <div class="col-6 col-md-3">
+        <!-- 2. CODINGAN TOTAL BARANG -->
+        <div class="col-6 col-md-3">
             <div class="card shadow-sm border-0 border-bottom border-4 border-success h-100">
                 <div class="card-body text-center p-3">
                     <div class="text-success mb-2"><i class="fa fa-boxes fa-2x"></i></div>
@@ -50,11 +55,7 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
-
-        <!-- ========================================================================================== -->
-        <!-- 3. CODINGAN KATEGORI                                                                       -->
-        <!-- ========================================================================================== -->
+        <!-- 3. CODINGAN KATEGORI -->
         <div class="col-6 col-md-3">
             <div class="card shadow-sm border-0 border-bottom border-4 border-primary h-100">
                 <div class="card-body text-center p-3">
@@ -64,11 +65,7 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
-
-        <!-- ========================================================================================== -->
-        <!-- 4. CODINGAN JUMLAH RAK                                                                     -->
-        <!-- ========================================================================================== -->
+        <!-- 4. CODINGAN JUMLAH RAK -->
         <div class="col-6 col-md-3">
             <div class="card shadow-sm border-0 border-bottom border-4 border-warning h-100">
                 <div class="card-body text-center p-3">
@@ -78,12 +75,8 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
-
-        <!-- ========================================================================================== -->
-        <!-- 5. CODINGAN TERJUAL HARI INI                                                               -->
-        <!-- ========================================================================================== -->
-         <div class="col-6 col-md-3">
+        <!-- 5. CODINGAN TERJUAL HARI INI -->
+        <div class="col-6 col-md-3">
             <div class="card shadow-sm border-0 border-bottom border-4 border-info h-100">
                 <div class="card-body text-center p-3">
                     <div class="text-info mb-2"><i class="fa fa-shopping-cart fa-2x"></i></div>
@@ -92,18 +85,16 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
-
     </div>
 
     <!-- ========================================================================================== -->
-    <!-- 6. KELOLA MASTER DATA, PUSAT DATA, DAN DATA KATEGORI                                       -->
+    <!-- 6, 7, 8. KELOLA MASTER DATA (Kategori, Rak, Barang)                                        -->
     <!-- ========================================================================================== -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-bold text-dark mb-0"><i class="fa fa-database text-primary me-2"></i>Kelola Master Data</h4>
         <span class="badge bg-primary rounded-pill px-3 py-2 shadow-sm">Pusat Data</span>
     </div>
-    
+
     <div class="row items-push mb-5 g-4">
         <!-- Card Kategori -->
         <div class="col-md-4">
@@ -128,11 +119,8 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
 
-        <!-- ========================================================================================== -->
-        <!-- 7. CODINGAN DATA RAK                                                                       -->
-        <!-- ========================================================================================== -->
+        <!-- Card Rak -->
         <div class="col-md-4">
             <div class="card h-100 shadow border-0 transition-hover card-hover-warning">
                 <div class="card-body text-center p-4">
@@ -155,11 +143,8 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
 
-        <!-- ========================================================================================== -->
-        <!-- 8. CODINGAN DATA BARANG                                                                    -->
-        <!-- ========================================================================================== -->
+        <!-- Card Barang -->
         <div class="col-md-4">
             <div class="card h-100 shadow border-0 transition-hover card-hover-success">
                 <div class="card-body text-center p-4">
@@ -182,22 +167,20 @@
                 </div>
             </div>
         </div>
-        <!-- ========================================================================================== -->
     </div>
 
     <!-- ========================================================================================== -->
-    <!-- 9. CODINGAN TRANSAKSI & KEUANGAN, LIVE SYSTEM, MENU KASIR, MULAI PENJUALAN                 -->
+    <!-- 9. TRANSAKSI & KEUANGAN                                                                    -->
     <!-- ========================================================================================== -->
-   <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-bold text-dark mb-0"><i class="fa fa-cash-register text-success me-2"></i>Transaksi & Keuangan</h4>
         <span class="badge bg-success rounded-pill px-3 py-2 shadow-sm">Live System</span>
     </div>
 
-    <div class="row items-push g-4">
-        <!-- Card Penjualan (Gradient) -->
+    <div class="row items-push g-4 mb-5">
+        <!-- Card Penjualan -->
         <div class="col-md-6">
             <a class="block block-rounded block-link-pop h-100 shadow border-0 bg-gd-sea text-white transition-hover position-relative overflow-hidden" href="index.php?page=penjualan" style="display: block; text-decoration: none;">
-                <!-- Decorative background icon -->
                 <i class="fa fa-shopping-basket fa-4x position-absolute opacity-25" style="bottom: -10px; right: -10px; transform: rotate(-15deg);"></i>
                 <div class="block-content block-content-full d-flex align-items-center justify-content-between p-4">
                     <div>
@@ -211,14 +194,9 @@
                 </div>
             </a>
         </div>
-        <!-- ========================================================================================== -->
-
-        <!-- ========================================================================================== -->
-        <!-- 10. CODINGAN LAPORAN HARIAN                                                                -->
-        <!-- ========================================================================================== -->
-       <div class="col-md-6">
+        <!-- Card Laporan -->
+        <div class="col-md-6">
             <a class="block block-rounded block-link-pop h-100 shadow border-0 bg-gd-sun text-white transition-hover position-relative overflow-hidden" href="index.php?page=laporan" style="display: block; text-decoration: none;">
-                <!-- Decorative background icon -->
                 <i class="fa fa-chart-pie fa-4x position-absolute opacity-25" style="bottom: -10px; right: -10px; transform: rotate(15deg);"></i>
                 <div class="block-content block-content-full d-flex align-items-center justify-content-between p-4">
                     <div>
@@ -232,50 +210,145 @@
                 </div>
             </a>
         </div>
-        <!-- ========================================================================================== -->
     </div>
+
+    <!-- ========================================================================================== -->
+    <!-- TAMBAHAN: ACTIVITY LOG (Riwayat Aktivitas)                                                 -->
+    <!-- ========================================================================================== -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="fw-bold text-dark mb-0"><i class="fa fa-history text-secondary me-2"></i>Aktivitas Terbaru</h4>
+        <a href="index.php?page=activity-log" class="btn btn-sm btn-light border shadow-sm">Lihat Semua</a>
+    </div>
+
+    <div class="block block-rounded shadow-sm border-0 mb-4">
+        <div class="block-content p-0">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-vcenter mb-0">
+                    <thead class="bg-body-light">
+                        <tr>
+                            <th class="ps-4" style="width: 20%;">Modul</th>
+                            <th>Aktivitas</th>
+                            <th class="pe-4 text-end" style="width: 25%;">Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (mysqli_num_rows($query_activity) > 0): ?>
+                            <?php while ($row = mysqli_fetch_assoc($query_activity)): ?>
+                                <tr>
+                                    <td class="ps-4">
+                                        <span class="badge bg-primary-light text-primary">
+                                            <i class="fa fa-cube me-1"></i> <?= htmlspecialchars($row['modul']) ?>
+                                        </span>
+                                    </td>
+                                    <td class="fw-medium text-dark text-sm">
+                                        <?= htmlspecialchars($row['aktivitas']) ?>
+                                    </td>
+                                    <td class="pe-4 text-end text-muted fs-sm">
+                                        <i class="far fa-clock me-1"></i> <?= date('d M Y, H:i', strtotime($row['created_at'])) ?>
+                                    </td>
+                                </tr>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="3" class="text-center py-4 text-muted">Belum ada aktivitas terekam.</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- END Activity Log -->
+
 </div>
 
 <!-- Custom CSS (Membuatnya Ramai & Animasi) -->
 <style>
     /* Gradient Backgrounds (Menggunakan warna yang umum di template UI) */
-    .bg-gd-dusk { background: linear-gradient(135deg, #1e1e2d 0%, #3a3a5c 100%); }
-    .bg-gd-sea { background: linear-gradient(135deg, #2b88d8 0%, #155799 100%); }
-    .bg-gd-sun { background: linear-gradient(135deg, #f68084 0%, #a65076 100%); }
-    
+    .bg-gd-dusk {
+        background: linear-gradient(135deg, #1e1e2d 0%, #3a3a5c 100%);
+    }
+
+    .bg-gd-sea {
+        background: linear-gradient(135deg, #2b88d8 0%, #155799 100%);
+    }
+
+    .bg-gd-sun {
+        background: linear-gradient(135deg, #f68084 0%, #a65076 100%);
+    }
+
     /* Light Backgrounds */
-    .bg-primary-light { background-color: #e7f0fa; color: #0056b3; }
-    .bg-warning-light { background-color: #fff8e5; color: #b38600; }
-    .bg-success-light { background-color: #eaf6ec; color: #1e7e34; }
+    .bg-primary-light {
+        background-color: #e7f0fa;
+        color: #0056b3;
+    }
+
+    .bg-warning-light {
+        background-color: #fff8e5;
+        color: #b38600;
+    }
+
+    .bg-success-light {
+        background-color: #eaf6ec;
+        color: #1e7e34;
+    }
 
     /* Hover Effects */
     .transition-hover {
         transition: all 0.3s ease-in-out;
     }
+
     .transition-hover:hover {
         transform: translateY(-7px);
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
     }
-    .card-hover-primary:hover { border-bottom: 4px solid #0d6efd !important; }
-    .card-hover-warning:hover { border-bottom: 4px solid #ffc107 !important; }
-    .card-hover-success:hover { border-bottom: 4px solid #198754 !important; }
+
+    .card-hover-primary:hover {
+        border-bottom: 4px solid #0d6efd !important;
+    }
+
+    .card-hover-warning:hover {
+        border-bottom: 4px solid #ffc107 !important;
+    }
+
+    .card-hover-success:hover {
+        border-bottom: 4px solid #198754 !important;
+    }
 
     /* Animasi Icon Berdenyut */
     @keyframes pulse-icon {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.1); }
-        100% { transform: scale(1); }
+        0% {
+            transform: scale(1);
         }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
     .card:hover .icon-pulse {
         animation: pulse-icon 1s infinite;
     }
-    
+
     /* Animasi Badge Berkedip/Berdenyut */
     @keyframes pulse-badge {
-        0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
-        70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+        0% {
+            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+        }
+
+        70% {
+            box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+        }
     }
+
     .pulse-badge {
         animation: pulse-badge 2s infinite;
     }

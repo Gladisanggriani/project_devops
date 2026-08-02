@@ -5,7 +5,7 @@
                   <i class="fa fa-circle-notch text-primary"></i>
               </span>
               <!-- <img src="assets/media/photos/gl.png" alt="Logo GL Swalayan" height="35"> -->
-              <span class="smini-hide fs-5 tracking-wider ">Swalayan</span>
+              <span class="smini-hide fs-5 tracking-wider ">Inventory</span>
           </a>
           <!-- END Logo -->
 
@@ -168,6 +168,16 @@
                               </a>
                           </li>
                       </ul>
+                  </li>
+
+                  <li class="nav-main-item">
+                      <a class="nav-main-link <?= $page == 'activity_log' ? 'active' : '' ?>"
+                          href="index.php?page=activity_log">
+                          <i class="nav-main-link-icon fa fa-history"></i>
+                          <span class="nav-main-link-name">
+                              Activity Log
+                          </span>
+                      </a>
                   </li>
               </ul>
           </div>
